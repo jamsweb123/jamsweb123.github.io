@@ -1,5 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [template](README.md)
 * [TEST](https://jamsweb123.github.io./)
 
