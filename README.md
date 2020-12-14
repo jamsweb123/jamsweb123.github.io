@@ -1,4 +1,4 @@
-# Initial page
+# template
 
 ## Getting Super Powers
 
