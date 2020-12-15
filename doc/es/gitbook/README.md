@@ -1,39 +1,12 @@
-# GitBook Template
+# Cómo colaborar con la documentación
 
-Proyecto 'plantilla' para la generación de documentación haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
-
-Puedes ver esta documentación online en https://inyenia.github.io/gitbook-template/ y descargarla en formato pdf desde https://inyenia.github.io/gitbook-template/book_es.pdf
+Esta documentación se genera haciendo uso de markdown y GitBook [GitBook](https://github.com/GitbookIO/gitbook)
 
 Para modificar la documentación solo hay que añadir o modificar uno de los fichero .md existentes dentro de la carpeta doc de este proyecto, puedes consultar la sintasis desde [Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
-Puedes descargar el editor de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor-legacy/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
+Puedes descargar el editor de GitBook para tu sistema operativo desde https://github.com/GitbookIO/editor/releases una vez instalada solo tienes que abrir la carpeta doc del proyecto con la app.
 
-##### Snippets de código
-
-Haciendo uso del script **snippets.sh** puedes añadir snippets de código direntamente del código o los JUnit de tu aplicación a la documentación.
-
-Para crear un snippet en la clase java tenemos añadir lo siguiente
-
-```java
-//BEGIN-SNIPPET: example1
-System.out.println("Hello, World snippet 1");
-//END-SNIPPET
-```
-
-Para generar los snippets en formato markdown tienes que ejecutar los siguiente:
-
-```
-./snippets.sh java src doc/es/snippets
-```
-Una vez ejecutado el script **snippets.sh** se creará el fichero example1.md en el directorio doc/es/snippets para usar este snippet en nuestra documentación tenemos que añadir el siguiente código
-
-```
-{% include "./snippets/example1.md" %}
-```
-
-##### Añadir imágenes
-
-Puedes añadirlas dentro de la carpeta resources. Añadir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.
+Si necesitas añadir imágenes, puedes añadirlas dentro de la carpeta resources. Añadir dentro de esta carpeta el fuente de la imagen por si es necesario modificarla.
 
 Puedes añadir la imágenes con el siguiente código
 
@@ -57,6 +30,8 @@ $ npm uninstall -g gitbook
 
 ```
 $ npm install -g gitbook-cli
+$ gitbook versions:install latest
+$ gitbook versions
 ```
 
 ###### Instalación de Calibre
