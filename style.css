@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background: #444;
+  color: #DDD;
+}
+
+.container > section {
+  width: 50%;
+  height: 100%;
+}
+
+
+/* profile image section */
+.profile-image {
+  background: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Favatar.png?alt=media&token=2f1a741e-572a-454f-b0bf-ff6fe32d93a3') no-repeat bottom center;
+  background-size: 80% 90%;
+}
+
+/* Profile info section */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 270px;
+  height: 160px;
+  background: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Flogo.png?alt=media&token=2d5d1c26-8bd4-471d-8c30-cdd2ba76dc4c') no-repeat right center;
+}
+
+
+.profession {
+  max-width: 600px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+
+/* links section */
+.links {
+  margin-top: 45px;
+}
+
+.mail-link {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+/* social links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links span {
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.youtube {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Fyoutube_icon.svg?alt=media&token=1b70aa55-9bf7-4013-8f3b-94d1b76b5697');
+}
+
+.twitter {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Ftwitter_icon.svg?alt=media&token=d1030729-a4c8-4a44-abef-b7c022f6de7e');
+}
+
+.facebook {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Ffacebook_icon.svg?alt=media&token=30f80080-a68b-41d7-8c67-cad7b33bf2f6');
+}
+
+.linkedin {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Flinkedin_icon.svg?alt=media&token=e050ebd7-c0a9-412c-ad13-1f01d0c0d81b');
+}
+
+.instagram {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Finstagram_icon.svg?alt=media&token=852e7edd-ad9b-45fd-90b1-5f93f788d4a9');
+}
+
+
+/* YouTube Link */
+.youtube-link {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  margin-left: -90px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.youtube-link a {
+  text-decoration: none;  
+  color: #AAA;
+  display: inline-block;
+  padding: 10px;
+}
+
+
+@media(max-height: 400px) {
+  .youtube-link {
+    display: none;
+  }
+}
